@@ -14,6 +14,11 @@ app.get('/jorge', (_req, res) => {
   res.send('Route de Jorge');
 });
 
+app.get('/notjorge', (_req, res) => {
+  res.send('Route de conflict');
+});
+
+
 
 app.listen(port, () => {
   console.log(`Serveur lancé sur http://localhost:${port}`);
