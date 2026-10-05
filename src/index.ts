@@ -10,6 +10,11 @@ app.get('/', (_req, res) => {
 });
 
 // Nouvelles routes ici
+app.get('/notjorge', (_req, res) => {
+  res.send('Route de conflict');
+});
+
+
 
 app.listen(port, () => {
   console.log(`Serveur lancé sur http://localhost:${port}`);
